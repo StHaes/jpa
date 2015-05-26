@@ -13,8 +13,12 @@
       <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.10.final/hibernate-entitymanager-4.3.10.final-javadoc.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.10.final/hibernate-entitymanager-4.3.10.final-javadoc.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.10.final/hibernate-entitymanager-4.3.10.final-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.10.final/hibernate-entitymanager-4.3.10.final-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.10.final/hibernate-entitymanager-4.3.10.final-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.10.final/hibernate-entitymanager-4.3.10.final-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.10.final/hibernate-entitymanager-4.3.10.final-sources.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.10.final/hibernate-entitymanager-4.3.10.final-sources.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.10.final/hibernate-entitymanager-4.3.10.final-sources.jar!/" />
       <root url="jar://$MAVEN_REPOSITORY$/org/hibernate/hibernate-entitymanager/4.3.10.final/hibernate-entitymanager-4.3.10.final-sources.jar!/" />
