@@ -60,4 +60,20 @@ public class TestOurShizzle extends SuperTestOurShizzle {
         assertEquals(b.getAuthor(), "otherme");
 
     }
+
+    @Test
+    public void testactor() throws Exception {
+        Actor a = new Actor("jhonny","logan",Gender.MALE);
+        em.persist(a);
+        assertNotNull(a.getId());
+
+    }
+
+    @Test
+    public void testfilm() throws Exception {
+        Film f = new Film("The man of Steel",Genre.ACTIE);
+        em.persist(f);
+        assertNotNull(f.getId());
+
+    }
 }
