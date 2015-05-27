@@ -42,7 +42,7 @@ public class TestOurShizzle extends SuperTestOurShizzle {
 
     @Test
     public void testPassengergen() throws Exception {
-        Passenger p = new Passenger("Jhonnny", "Dewolf",40, PassengerType.OCCASIONAL);
+        Passenger p = new Passenger("Eobard", "Thawne",40, PassengerType.OCCASIONAL);
         em.persist(p);
         p.setAge(85);
         assertEquals(p.getAge(), 85);
@@ -63,17 +63,11 @@ public class TestOurShizzle extends SuperTestOurShizzle {
 
     @Test
     public void testactor() throws Exception {
-        Actor a = new Actor("jhonny","logan",Gender.MALE);
+        Actor a = new Actor("Barry","Allen",Gender.MALE);
         em.persist(a);
         assertNotNull(a.getId());
 
     }
 
-    @Test
-    public void testfilm() throws Exception {
-        Film f = new Film("The man of Steel",Genre.ACTIE);
-        em.persist(f);
-        assertNotNull(f.getId());
 
-    }
 }

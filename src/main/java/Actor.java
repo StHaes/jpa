@@ -1,5 +1,6 @@
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
@@ -8,14 +9,14 @@ import javax.persistence.Id;
 @Entity
 public class Actor {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String firstName;
     private String lastName;
     private Gender gender;
 
-    public String fullName(){
-        return firstName + " "+ lastName;
+    public String fullName() {
+        return firstName + " " + lastName;
     }
 
     public Integer getId() {
