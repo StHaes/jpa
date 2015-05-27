@@ -13,4 +13,11 @@ public class Filmtests extends SuperTestOurShizzle{
         assertNotNull(f.getId());
 
     }
+    @Test
+    public void testactor() throws Exception {
+        Actor a = new Actor("Barry","Allen",Gender.MALE);
+        em.persist(a);
+        assertNotNull(a.getId());
+
+    }
 }
