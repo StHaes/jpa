@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="04e129e3-7759-419c-b3ff-a3e6270a165e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Actor.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Film.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Gender.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Genre.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_10_Final.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_4_3_10_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestOurShizzle.java" afterPath="$PROJECT_DIR$/src/test/java/TestOurShizzle.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jpaexercise.iws" />
@@ -777,7 +771,7 @@
       <option name="number" value="Default" />
       <updated>1432627832126</updated>
       <workItem from="1432627833542" duration="14924000" />
-      <workItem from="1432710390554" duration="8402000" />
+      <workItem from="1432710390554" duration="8436000" />
     </task>
     <task id="LOCAL-00001" summary="Added Repo and Books">
       <created>1432632152256</created>
@@ -845,11 +839,17 @@
       <option name="project" value="LOCAL" />
       <updated>1432722323257</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="new branch film with actors and film">
+      <created>1432732844235</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1432732844235</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23326000" />
+    <option name="totallyTimeSpent" value="23360000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -906,7 +906,8 @@
     <MESSAGE value="added passenger case(corrected)" />
     <MESSAGE value="corrected 2" />
     <MESSAGE value="added test on merges" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test on merges" />
+    <MESSAGE value="new branch film with actors and film" />
+    <option name="LAST_COMMIT_MESSAGE" value="new branch film with actors and film" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
