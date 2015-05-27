@@ -34,7 +34,7 @@ public class TestOurShizzle extends SuperTestOurShizzle {
 
     @Test
     public void testGenerate() throws Exception {
-        Book b = new Book("Dance with Dragons","Jsnow","0000000003");
+        Book b = new Book("Dance with Dragons","Jsno","0000000003");
         em.persist(b);
         assertNotNull(b.getId());
 
