@@ -9,6 +9,7 @@ import javax.persistence.Persistence;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 public class TestOurShizzle extends SuperTestOurShizzle {
 
@@ -28,6 +29,35 @@ public class TestOurShizzle extends SuperTestOurShizzle {
     public void testname() throws Exception {
         List <Book> books = em.createQuery("select b from Book b", Book.class).getResultList();
         assertEquals("Nineteen Eighty Four", books.get(0).getTitle());
+
+    }
+
+    @Test
+    public void testGenerate() throws Exception {
+        Book b = new Book("Dance with Dragons","Jsnow","0000000003");
+        em.persist(b);
+        assertNotNull(b.getId());
+
+    }
+
+    @Test
+    public void testPassengergen() throws Exception {
+        Passenger p = new Passenger("Jhonnny", "Dewolf",40, PassengerType.OCCASIONAL);
+        em.persist(p);
+        p.setAge(85);
+        assertEquals(p.getAge(), 85);
+
+    }
+
+    @Test
+    public void testdoublemerge() throws Exception {
+        Book b = new Book("mergetest", "me","0000000004" );
+        em.getTransaction().commit();
+        em.clear();
+        b.setAuthor("otherme");
+        em.getTransaction().begin();
+        b = em.merge(b);
+        assertEquals(b.getAuthor(), "otherme");
 
     }
 }

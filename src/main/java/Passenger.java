@@ -8,7 +8,7 @@ import java.util.Date;
 public class Passenger {
     @Id
     @GeneratedValue
-    private int id;
+    private Integer id;
 
     private int ffm;
     private byte[] picture;
@@ -20,9 +20,18 @@ public class Passenger {
     private int age;
     @Enumerated(EnumType.STRING)
     private PassengerType type;
-    @Column(nullable = false, updatable = false)
+    @Column(updatable = false)
     @Access(AccessType.PROPERTY)
     private Date birthDate;
+
+    public Passenger( String firstName, String lastName, int age, PassengerType type) {
+
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.type = type;
+
+    }
 
     public Passenger() {
     }
