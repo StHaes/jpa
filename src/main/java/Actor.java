@@ -1,8 +1,7 @@
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
-/**
- * Created by jeansmits on 27/05/15.
- */
 @Entity
 public class Actor {
     @Id
@@ -12,6 +11,8 @@ public class Actor {
     private String lastName;
     @Enumerated(EnumType.STRING)
     private Gender gender;
+    @ManyToMany(mappedBy = "actors")
+    private List<Film> films = new ArrayList<>();
 
     public String fullName() {
         return firstName + " " + lastName;
@@ -49,6 +50,15 @@ public class Actor {
         this.gender = gender;
     }
 
+    public List<Film> getFilms() {
+        return films;
+    }
+
+    public void setFilms(List<Film> films) {
+        this.films = films;
+
+    }
+
     public Actor(String firstName, String lastName, Gender gender) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -56,5 +66,8 @@ public class Actor {
     }
 
     public Actor() {
+    }
+    public void addFilm(Film film){
+        films.add(film);
     }
 }

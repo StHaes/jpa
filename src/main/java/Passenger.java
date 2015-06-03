@@ -1,9 +1,6 @@
 import javax.persistence.*;
 import java.util.Date;
 
-/**
- * Created by jeansmits on 26/05/15.
- */
 @Entity
 public class Passenger {
     @Id

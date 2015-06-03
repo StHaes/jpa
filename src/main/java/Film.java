@@ -1,5 +1,6 @@
 import javax.persistence.*;
-
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Film {
@@ -9,6 +10,10 @@ public class Film {
     private String title;
     @Enumerated(EnumType.STRING)
     private Genre genre;
+    @ManyToMany
+    private List<Actor> actors =new ArrayList<>();
+    @ManyToOne
+    private Director d;
 
     public Film() {
     }
@@ -40,5 +45,26 @@ public class Film {
 
     public void setGenre(Genre genre) {
         this.genre = genre;
+    }
+
+    public List<Actor> getActors() {
+        return actors;
+    }
+
+    public void setActors(List<Actor> actors) {
+        this.actors = actors;
+
+    }
+
+    public Director getD() {
+        return d;
+    }
+
+    public void setD(Director d) {
+        this.d = d;
+    }
+    public void addActor(Actor actor){
+        actors.add(actor);
+        actor.addFilm(this);
     }
 }
