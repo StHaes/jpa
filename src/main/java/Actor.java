@@ -66,4 +66,7 @@ public class Actor {
     public void addFilm(Film film){
         films.add(film);
     }
+
+    //select  avg (a.age) from Actor a join a.film f group by f.director.name (joins in JPQL)
+
 }
